@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="328dp"
+        android:layout_height="575dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="115dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pay_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Make Payment"
+                android:textColor="#FD7F20"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/DetailsCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pay_details"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardBackgroundColor="#FD7F20"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_round"
+                    android:focusableInTouchMode="false"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/c_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Card no"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/CardNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:hint="Enter card no"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/card_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Card holder name"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/CardHolderName"
+                            android:layout_width="match_parent"
+                            android:layout_height="53dp"
+                            android:inputType="text"
+                            android:hint="Card holder name"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/cvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="CVV"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/txtcv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/cvvNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:inputType="number"
+                            android:hint="Card CVV"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/expd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Expire date"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/ExpireDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:hint="Expire Date"
+                            android:inputType="number"
+                            android:minLines="2"
+                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnInsert"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtTPrice"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round"
+                android:text="Submit order"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="100dp"
+                android:layout_height="86dp"
+                app:srcCompat="@drawable/abc"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
