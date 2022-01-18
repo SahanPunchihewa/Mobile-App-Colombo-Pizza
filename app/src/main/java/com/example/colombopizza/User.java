@@ -1,6 +1,8 @@
-package com.example.colombopizza;
+package com.example.colombopizza; // Package
 
-public class User {
+public class User { // User Class
+
+        // Private Attributes
 
     private String userid;
     private String username;
@@ -8,8 +10,20 @@ public class User {
     private String phone;
     private String password;
 
+    public  User() { // Default Constructor
+
+        userid = "";
+        username = "";
+        address = "";
+        phone = "";
+        password = "";
+
+    }
+
 
     public User(String userid, String username, String address, String phone, String password) {
+
+        // overload Constructor
         this.userid = userid;
         this.username = username;
         this.address = address;
@@ -17,11 +31,11 @@ public class User {
         this.password = password;
     }
 
-    public String getUserid() {
+    public String getUserid() { // Get Method
         return userid;
     }
 
-    public void setUserid(String userid) {
+    public void setUserid(String userid) { // Set Method
         this.userid = userid;
     }
 

@@ -1,4 +1,4 @@
-package com.example.colombopizza;
+package com.example.colombopizza; // Package
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
 
         myDB = new DBHelper(this);
 
-        loginbtn.setOnClickListener(new View.OnClickListener() {
+        loginbtn.setOnClickListener(new View.OnClickListener() { // Login Button Function
             @Override
             public void onClick(View view) {
 
@@ -60,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        createbtn.setOnClickListener(new View.OnClickListener() {
+        createbtn.setOnClickListener(new View.OnClickListener() { // Create Account Function
             @Override
             public void onClick(View view) {
 

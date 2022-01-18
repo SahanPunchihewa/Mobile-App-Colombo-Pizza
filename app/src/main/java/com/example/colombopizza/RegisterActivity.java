@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.nio.charset.StandardCharsets;
+
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -32,7 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         myDB = new DBHelper(this);
 
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
+        btnSignUp.setOnClickListener(new View.OnClickListener() { // Singup button function
             @Override
             public void onClick(View view) {
 

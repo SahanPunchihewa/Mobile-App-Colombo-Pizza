@@ -15,6 +15,7 @@ public class DBHelper extends SQLiteOpenHelper { // DB Helper class extend SQLit
     @Override
     public void onCreate(SQLiteDatabase myDB) {
 
+            // Database Creation
         myDB.execSQL("create Table users(username TEXT primary key, password TEXT NOT NULL )");
         myDB.execSQL("create Table orders(pName TEXT primary key, pType TEXT, pQuantity TEXT, pPrice TEXT, tPrice TEXT)");
         myDB.execSQL("create Table payments(cardno TEXT primary key, choldername TEXT, cvv TEXT, expiredate TEXT)");
@@ -81,6 +82,7 @@ public class DBHelper extends SQLiteOpenHelper { // DB Helper class extend SQLit
     }
 
     public Boolean insertorderdata(String pName, String pType, String pQuantity, String pPrice, String tPrice) {
+        // Insert order data function
 
         SQLiteDatabase myDB = this.getReadableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -101,6 +103,8 @@ public class DBHelper extends SQLiteOpenHelper { // DB Helper class extend SQLit
     }
 
     public Boolean updateorderdata(String pName, String pType, String pQuantity, String pPrice, String tPrice) {
+
+        // Update order data function
 
         SQLiteDatabase myDB = this.getReadableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -130,6 +134,8 @@ public class DBHelper extends SQLiteOpenHelper { // DB Helper class extend SQLit
 
 
     public Boolean deletedata(String pName) {
+
+        // Delete Order Function
 
         SQLiteDatabase myDB = this.getReadableDatabase();
 
@@ -163,6 +169,7 @@ public class DBHelper extends SQLiteOpenHelper { // DB Helper class extend SQLit
 
     public Boolean InsertPaymentDetails(String cardno, String choldername, String cvv, String expiredate) {
 
+        // Insert payment data
 
         SQLiteDatabase myDB = this.getReadableDatabase();
         ContentValues contentValues = new ContentValues();
