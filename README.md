@@ -6,7 +6,7 @@
 
 <br>
 
-# Register
+# Register Page
 
 ![Register](https://user-images.githubusercontent.com/72688889/150120872-faf2a477-1315-4f57-9356-71528940b205.png)
 
