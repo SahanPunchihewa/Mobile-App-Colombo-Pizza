@@ -23,3 +23,15 @@
 
 
 ![Main](https://user-images.githubusercontent.com/72688889/150121556-75bbdd06-ba5a-4088-a7cc-222f6652a4e7.png)
+
+<br>
+
+# Order Page
+
+![Order](https://user-images.githubusercontent.com/72688889/150121663-5154b8b0-1c44-4311-a155-e797b959818a.png)
+
+<br>
+
+# Payment Page
+
+![Payment](https://user-images.githubusercontent.com/72688889/150121754-34614429-0f89-4f5e-a6ca-fb04339458ff.png)
